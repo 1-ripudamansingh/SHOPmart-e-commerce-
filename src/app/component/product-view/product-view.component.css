@@ -1,3 +1,4 @@
+
 .card img{
      width:150px;
      height: 145px;
@@ -62,7 +63,7 @@ a{
 
 }
 .amazon-logo{
-    /*background-image: url("download (2).png");*/
+    
     background-size: cover;
     height: 40px;
     width: 100px;
@@ -89,7 +90,7 @@ a{
     
 }
 .indian-flag{
-    /*background-image: url("india.png");*/
+    
     background-size: cover;
     height:15px;
     width: 30px;

@@ -1,7 +1,7 @@
 <ng-container *ngIf="showproduct.length !=0" >
     <div class="container-fluid" style="margin-top:65px">
       <div class="row">
-        <div class="col-sm-9">
+        <div class="col-sm-12 col-md-9 clo-lg-9 col-xl-9 col-12">
           
         <h3>Cart Items</h3>
         <table class="table table-borderless mt-3">
@@ -27,8 +27,8 @@
           </table>
     </div>
     <!--total amount section-->
-    <div class="col-sm-3">
-      <h1>Tota; amount</h1>
+    <div class="col-sm-12 col-md-3 col-12">
+      <h1>Total amount:</h1>
       <strong style="font-size:35px;color:green">${{totalamount}}</strong><br>
       <div class="btn-group mt-3">
         <button (click)="this.addressform=true"  class="btn btn-primary mx-1">Checkout</button>

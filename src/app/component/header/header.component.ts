@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ApiService } from '../../shared/api.service';
 import { RouterLink } from '@angular/router';
-//import { RouterLink } from '@angular/router';
+
 
 @Component({
   selector: 'app-header',
@@ -14,7 +14,7 @@ export class HeaderComponent {
   constructor(private api:ApiService){}
   ngOnInit(){
     this.cartitems;
-    this.api.products().subscribe((res)=>{
+    this.api.products().subscribe((res:any)=>{
       this.cartitems=res.length;
     })
   }
