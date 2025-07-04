@@ -1,0 +1,84 @@
+<!--Header-->
+<!--<div class="container-fluid" style="background-color:black">
+   <div class="row justify-content-center text-center">
+       <div class="col-md-8 col-lg-6">
+           <div class="header">
+               <h3 style="color:white;font-size:23px">Popular E-commerce Products</h3>
+           </div>
+       </div>
+   </div>
+</div>-->
+
+
+<!--carousel-->
+<div style="background:black;margin-top:55px">
+<div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images-eu.ssl-images-amazon.com/images/W/MEDIAX_1215821-T2/images/G/31/img21/SMC/May/new/MTD_PC_GW_3000X1200._CB794814339_.jpg" class="d-block  w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images-eu.ssl-images-amazon.com/images/W/MEDIAX_1215821-T2/images/G/31/prime/ACQ/RTB/PC_2X._CB550948982_.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images-eu.ssl-images-amazon.com/images/W/MEDIAX_1215821-T2/images/G/31/AmazonBusiness/img25/may/bvd/hero/HomeKitchen_3000_1200_0403._CB794791291_.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+                <img src="https://images-eu.ssl-images-amazon.com/images/W/MEDIAX_1215821-T2/images/G/31/2025/LawnGarden/GW/GW22ndMAY/GW-Hero-Pc-Solar-Garden-Lights._CB794819040_.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/W/MEDIAX_1215821-T2/images/G/31/CookwareDining/Akhilesh/may/gw/17th/WBLB_1500X600_1._CB794130750_.jpg" class="d-block w-100" alt="...">
+                  </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+
+<!--Product display part-->
+<div class="container-fluid" style="background-color:black">
+    <div class="row">
+        <div class="col-md-3 col-sm-4 col-12 col-lg-2 mt-3" *ngFor="let item of data?.products">
+             <div class="card mt-2">
+                 <div class="card-body">
+                     <div class="card-img-actions">
+                         <img style="display: block;margin-left: auto;margin-right: auto;
+                         width: 50%;" routerLink="/product-detail/{{item.id}}" src="{{item.thumbnail}}" class="card-img img-fluid" alt="">
+                     </div>
+                 </div>
+                 <div class="card-body bg-light text-center">
+                     <div>
+                         <h6 class="font-weight-semibold">
+                             <a href="" class="text-default">{{item.title}}</a>
+                         </h6>
+                     </div>
+                     <h3 class="mb-0 font-weight-semibold">${{item.price}}</h3>
+                     <button routerLink="/product-detail/{{item.id}}"class="btn btn-sm mt-2 btn-dark"> <i class="fa fa-solid fa-info mr-2"></i>&nbsp;&nbsp; View details</button>&nbsp;
+                     <button (click)="addtocart(item)" class="btn btn-sm mt-2 btn-warning"><i class="fa fa-cart-plus mr-2"></i>&nbsp;Add to Cart</button>&nbsp;
+                     <button (click)="removeitem(item)" class="btn btn-sm mt-2 btn-danger"><i class="fa fa-remove mr-2"></i>&nbsp;Remove Item</button>&nbsp;
+                 </div>
+             </div>
+        </div>
+    
+    </div>
+</div>
+
+<!--footer-->
+<footer>
+        <div class="footer-pannel3 ">
+          
+             
+              <div class="copyright text-info ">
+                      <div ><a class="text-info"href="">© 1996-2025,</a>&nbsp;</div>
+                      <div > <a class="text-info" href="">Shopmart.com,</a>&nbsp; </div>
+                      <div ><a class="text-info" href="">Inc. or its affiliate</a>&nbsp;</div>
+                    </div>
+            
+            </div>
+</footer>

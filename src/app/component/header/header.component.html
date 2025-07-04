@@ -1,0 +1,45 @@
+<!--Header
+
+<div class="container-fluid fixed-top" style="background-color:black;height:55px">
+    <div class="row ">
+        <div class="col-md-8 col-lg-6">
+            <div class="header d-flex justify-content-around">
+                <h3 style="color:white;font-size:23px">Popular E-commerce Products</h3>
+                <i class="fas fa-shopping-cart" routerLink="cart-page" style="color:white;font-size:18px;cursor:pointer;">&nbsp;{{cartitems}}</i>
+        </div>
+    </div>
+ </div>-->
+ <nav class="navbar navbar-expand-lg  fixed-top d-flex" >
+  <div class="container-fluid">
+    <a class="navbar-brand text-info fs-2 mx-5" href="#">SHOP<span style="color:red">mart</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2   mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link text-primary active mx-3" aria-current="page" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link text-primary active mx-3 " aria-current="page" href="#">Parent Country: <i class="fa-solid fa-location-dot text-light"></i><span class="text-danger"> USA</span> </a>
+          </li>
+        <li class="nav-item ">
+            <a class="nav-link text-primary active mx-3 " aria-current="page" href="#">Deliver To: <i class="fa-solid fa-location-dot text-light"></i><span style="color:orange"> INDIA</span> </a>
+          </li>
+
+        
+        <li class="nav-item">
+            <i class="nav-link text-light active " class="fas fa-shopping-cart" routerLink="cart-page" style="color:yellow;margin:15px;cursor:pointer;">&nbsp;: {{cartitems}}</i>
+        
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+  
+ </nav>
+
+
+  
