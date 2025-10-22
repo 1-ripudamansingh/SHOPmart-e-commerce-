@@ -11,6 +11,7 @@ export class ApiService {
   constructor(private http:HttpClient) { }
   getproduct(){
      return this.http.get<product[]>("https://dummyjson.com/products");
+    
   }
 
   getproductbyid(id:string){

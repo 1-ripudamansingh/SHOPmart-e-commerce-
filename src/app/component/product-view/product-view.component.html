@@ -1,22 +1,27 @@
 <!--carousel-->
+
 <div style="background:black;margin-top:55px">
-<div id="carouselExample" class="carousel slide">
+<div id="carouselExample" class="carousel slide pt-3">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://images-eu.ssl-images-amazon.com/images/W/MEDIAX_1215821-T2/images/G/31/img21/SMC/May/new/MTD_PC_GW_3000X1200._CB794814339_.jpg" class="d-block  w-100" alt="...">
+          <div class="carousel-item  active">
+            <img src="hero_image.jpg" class="d-block  w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="https://images-eu.ssl-images-amazon.com/images/W/MEDIAX_1215821-T2/images/G/31/prime/ACQ/RTB/PC_2X._CB550948982_.jpg" class="d-block w-100" alt="...">
+            <img src="hero_image1.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="https://images-eu.ssl-images-amazon.com/images/W/MEDIAX_1215821-T2/images/G/31/AmazonBusiness/img25/may/bvd/hero/HomeKitchen_3000_1200_0403._CB794791291_.jpg" class="d-block w-100" alt="...">
+              <img src="hero_image2.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-                <img src="https://images-eu.ssl-images-amazon.com/images/W/MEDIAX_1215821-T2/images/G/31/2025/LawnGarden/GW/GW22ndMAY/GW-Hero-Pc-Solar-Garden-Lights._CB794819040_.jpg" class="d-block w-100" alt="...">
-              </div>
+              <img src="hero_image3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="hero_image4.jpg" class="d-block w-100" alt="...">
+              </div> 
               <div class="carousel-item">
-                    <img src="https://images-eu.ssl-images-amazon.com/images/W/MEDIAX_1215821-T2/images/G/31/CookwareDining/Akhilesh/may/gw/17th/WBLB_1500X600_1._CB794130750_.jpg" class="d-block w-100" alt="...">
-                  </div>
+                  <img src="hero_image5.jpg" class="d-block w-100" alt="...">
+                </div>     
+          
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -32,7 +37,7 @@
 <!--Product display part-->
 <div class="container-fluid" style="background-color:black">
     <div class="row p-1" >
-        <div class="col-md-3 col-sm-4 col-12 col-lg-2 mt-3" *ngFor="let item of data?.products">
+        <div class="col-md-4 col-sm-6 col-12 col-lg-3 mt-3" *ngFor="let item of data?.products">
              <div class="card mt-2">
                  <div class="card-body">
                      <div class="card-img-actions">

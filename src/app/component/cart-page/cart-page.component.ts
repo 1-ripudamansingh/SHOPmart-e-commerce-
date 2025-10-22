@@ -22,7 +22,7 @@ export class CartPageComponent {
   })
   constructor(private api:ApiService){}
   ngOnInit(){
-    this.api.products().subscribe((res)=>{
+    this.api.products().subscribe((res:product)=>{
       this.showproduct = res;
       this.totalamount=this.api.calculateprice();
       console.log("total amountmmm is",this.totalamount)
@@ -46,7 +46,7 @@ export class CartPageComponent {
     console.log(this.myform);
     this.myform.reset();
     console.log(this.myform);
-    console.log('subbbbbbbbbb');
+    console.log('sub');
     
   }
 
