@@ -1,11 +1,13 @@
 <!---->
- <nav class="navbar navbar-expand-lg  fixed-top d-flex " style="height:4rem" >
+ <nav class="navbar navbar-expand-lg  fixed-top d-flex  " style="height:5rem" >
   <div class="container-fluid  " >
-    <a class="navbar-brand text-info fs-2   hover " routerLink="/" style="margin-left:2.5rem" href="#">SHOP<span style="color:red">mart</span></a>
-    <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!--<button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon "></span>
-    </button>
-    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    </button>-->
+    <a class="navbar-brand text-info fs-2    hover " routerLink="/" style="margin-left:1.5rem" href="#">SHOP<span style="color:red">mart</span></a>
+    <div><i class="nav-link text-warning active   hover " class="fas fa-shopping-cart  text-warning hover mt-4 py-3" routerLink="cart-page" style="margin:15px;cursor:pointer;">&nbsp;: {{cartitems}}</i>
+    </div>  
+    <!--<div class="collapse navbar-collapse " id="navbarSupportedContent">
       <ul class="navbar-nav mx-auto mb-2   mb-lg-0">
         
         
@@ -27,16 +29,19 @@
 
         
         <li class="nav-item">
-            <i class="nav-link text-warning active   hover " class="fas fa-shopping-cart  text-warning hover mt-4 py-3" routerLink="cart-page" style="margin:15px;cursor:pointer;">&nbsp;: {{cartitems}}</i>
-        
+          
         </li>
+
         
         
       </ul>
       
-    </div>
+    </div>-->
+    
+
+       
   </div>
-  
+ 
  </nav>
 
 
